@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskApp</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+   
+    <div class="body">
+        <div class="header">
+            <h1>TaskApp</h1>
+            <button id="topBtn" onclick="closeBtn()">Close</button>
+        </div>
+        <form action="" class="details">
+            <fieldset id="task_body">
+                <label for="Task" class="Task">Task</label>
+                <textarea name="Task" id="Task" cols="80" rows="3"></textarea>
+                <label for="date" class="date">Date/Time</label>
+                <input type="date" name="date" id="date">
+                <div class="reminder">
+                    <span>Set Reminder</span>
+                    <input type="checkbox" name="check" id="check">
+                </div>
+                <button onclick="mouseClick()" type="button">Submit</button>
+            </fieldset>
+        </form>
+        <div class="footer" id="footer">
+            <button type="button" id="clearBtn" onclick="clearBtn()">Clear</button>
+            <b>&copy; Copyright of Chris <span id="year"></span></b>
+        </div>
+    </div>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <script src="./script.js"></script>
+</body>
+</html>
